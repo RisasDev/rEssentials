@@ -1,0 +1,4 @@
+main: dev.risas.rEssentials
+name: rEssentials
+version: ${project.version}
+author: Risas
