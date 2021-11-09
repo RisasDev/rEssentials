@@ -1,5 +1,6 @@
 package dev.risas;
 
+import dev.risas.module.rModuleService;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -8,7 +9,7 @@ public class rEssentials extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        super.onEnable();
+        rModuleService.init(this);
     }
 
     @Override
