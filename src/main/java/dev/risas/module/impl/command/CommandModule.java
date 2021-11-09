@@ -1,6 +1,7 @@
 package dev.risas.module.impl.command;
 
 import dev.panda.command.CommandManager;
+import dev.risas.commands.rEssentialCommand;
 import dev.risas.module.rModule;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -29,6 +30,9 @@ public class CommandModule extends rModule {
     @Override
     public void onEnable(JavaPlugin plugin) {
         new CommandManager(plugin, new ArrayList<>());
+
+        // rEssentials Commands
+        new rEssentialCommand();
 
         loadedLog();
     }
