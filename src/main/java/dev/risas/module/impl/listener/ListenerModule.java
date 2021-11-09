@@ -13,13 +13,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ListenerModule extends rModule {
 
     @Override
-    public void setName(String name) {
-        super.setName("Listener");
+    public String getName() {
+        return "Listener";
     }
 
     @Override
-    public void setPriority(int priority) {
-        super.setPriority(2);
+    public int getPriority() {
+        return 2;
     }
 
     @Override

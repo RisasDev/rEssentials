@@ -18,13 +18,13 @@ import java.util.ArrayList;
 public class CommandModule extends rModule {
 
     @Override
-    public void setName(String name) {
-        super.setName("Command");
+    public String getName() {
+        return "Command";
     }
 
     @Override
-    public void setPriority(int priority) {
-        super.setPriority(1);
+    public int getPriority() {
+        return 1;
     }
 
     @Override

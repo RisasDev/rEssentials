@@ -1,5 +1,7 @@
 package dev.risas.module;
 
+import dev.risas.module.impl.command.CommandModule;
+import dev.risas.module.impl.listener.ListenerModule;
 import lombok.experimental.UtilityClass;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -18,6 +20,9 @@ import java.util.List;
 public class rModuleService {
 
     public void init(JavaPlugin plugin) {
+        new CommandModule();
+        new ListenerModule();
+
         for (rModule module : rModuleService.getOrderModules()) {
             module.onEnable(plugin);
         }
